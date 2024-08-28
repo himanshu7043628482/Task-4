@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
+</head>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/logo.png" alt="Logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Himanshu</span><br>Sadadiya From Halvad</h1>
+            </div>
+        </div>
+        <div class="img-container">
+            <img src="image/pexels.jpg" class="img">        
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/man-1.jpeg" alt="About Me Image" class="man">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quam, ut consequuntur id beatae natus cum dolor quos sint tempore blanditiis qui rem vel labore. Aut beatae, deleniti ipsum minus pariatur incidunt corporis suscipit esse dignissimos hic, iure a vero veniam nisi perferendis. Officia sunt est recusandae tempore velit labore reiciendis, consequuntur dignissimos, provident odit laboriosam illum, minus maiores laudantium. At quis, rem esse modi hic voluptates optio quos.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('skills',event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience',event)">Experience</p>
+                        <p class="tab-links" onclick="opentab('education',event)">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend Developer</span><br>Web Design / Web Development</li>
+                            <li><span>Backend Developer</span><br>PHP Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Frontend Developer</span><br>Web Design / Web Development</li>
+                            <li><span>Backend Developer</span><br>PHP Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Frontend Developer</span><br>Web Design / Web Development</li>
+                            <li><span>Backend Developer</span><br>PHP Development</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------- Services---------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptate quos aut facilis quo soluta dicta tempora perspiciatis est, architecto earum esse officiis quae voluptatibus consectetur, sunt provident molestias ea.</p>
+                    <a href="#" aria-label="Learn more about web design">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI / UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptate quos aut facilis quo soluta dicta tempora perspiciatis est, architecto earum esse officiis quae voluptatibus consectetur, sunt provident molestias ea.</p>
+                    <a href="#" aria-label="Learn more about UI/UX design">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptate quos aut facilis quo soluta dicta tempora perspiciatis est, architecto earum esse officiis quae voluptatibus consectetur, sunt provident molestias ea.</p>
+                    <a href="#" aria-label="Learn more about app design">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------- protfolio---------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/work-1.avif">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you yo the talennted people around the world.Dowload it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/work-2.webp">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you yo the talennted people around the world.Dowload it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/work-3.avif">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you yo the talennted people around the world.Dowload it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!----------------------------- contact---------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                    <p><i class="fa-solid fa-phone"></i>1234567890</p>
+                    
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="image/" download class="btn btn2">Dowload CV</a>
+                </div>
+                <div class="contact-right">
+                    <form id="myform">
+                        <input type="text" name="name" id="name" placeholder="Your Name">
+                        <span id="Message1" style="color: red;"></span>
+                        <input type="email" name="email" id="email" placeholder="Your Email">
+                        <span id="Message2" style="color: red;"></span>
+                        <textarea name="message" rows="5" id="message" placeholder="Your Message"></textarea>
+                        <span id="Message3" style="color: red;"></span><br>
+                        <button type="submit" class="btn btn2" onclick="savedata(event)">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Himanshu. Made with <i class="fa-regular fa-heart"></i> by Easy tutorials</p>
+        </div>
+    </div>
+    <div class="table-container" align="center">
+        <h1>All Data</h1>
+        <table class="list" border="2">
+            <thead>
+               <tr>
+                  <th>No</th>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Message</th>
+               </tr>
+            </thead>
+            <tbody id="store">
+            </tbody>
+         </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
